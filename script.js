@@ -2,7 +2,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 // Hero animations
 const heroTl = gsap.timeline({})
-heroTl.fromTo('#hero h1, .hero-main p',
+heroTl.fromTo('#hero h1, .hero-main p, .hero-right',
     {
         x: -100,
         opacity: 0
@@ -51,7 +51,7 @@ portfolioTl.fromTo(
     '.portfolio-img',
     {
         opacity: 0,
-        scale: 0.8, // Slightly shrink the images
+        scale: 0.5, // Slightly shrink the images
     },
     {
         opacity: 1,
