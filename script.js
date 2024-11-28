@@ -42,25 +42,30 @@ heroTl.fromTo('.statistics div',
 const portfolioTl = gsap.timeline({
     scrollTrigger: {
         trigger: '#portfolio',
-        start: 'top 100px',
-    }
+        start: 'top 300px',
+        end: '+=300',
+    },
 });
 
 portfolioTl.fromTo(
     '.portfolio-img',
     {
         opacity: 0,
+        scale: 0.8, // Slightly shrink the images
     },
     {
         opacity: 1,
-        duration: 1,
-        stagger: 0.2,
+        scale: 1, // Bring them to their normal size
+        duration: 0.8,
+        stagger: 0.15, // Faster stagger
+        ease: 'power1.out', // Smooth easing
     }
 );
 
+
 const exhibitionTl = gsap.timeline({
     scrollTrigger: {
-        trigger: '#exhibition',
+        trigger: '#exhibitions',
         start: 'top 200px',
     }
 });
@@ -69,7 +74,7 @@ exhibitionTl.fromTo(
     '.exhibition-wrapper',
     {
         opacity: 0,
-        y: 50
+        y: 10
     },
     {
         opacity: 1,
