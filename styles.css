@@ -87,7 +87,7 @@ nav ul, .upcoming-exhibition {
 /* Hero */
 
 #hero {
-    margin-top: -4rem;
+    margin-top: -2rem;
 }
 
 #hero h1 {
@@ -202,7 +202,7 @@ nav ul, .upcoming-exhibition {
 }
 
 #about p {
-    margin-top: 30%;
+    margin-top: 10%;
     font-weight: 600;
     padding: 0rem 2rem;
 }
@@ -248,11 +248,12 @@ nav ul, .upcoming-exhibition {
 
 #portfolio div {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, minmax(10rem, 1fr));
-    gap: 1rem;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, minmax(10rem, 1fr));
+    gap: 0.3rem;
     margin-top: -3rem;
     z-index: 1;
+    overflow-x: hidden;
 }
 
 .portfolio-img {
@@ -290,6 +291,10 @@ nav ul, .upcoming-exhibition {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+}
+
+#exhibitions .marquee {
+    color: #000;
 }
 
 .exhibition-wrapper {

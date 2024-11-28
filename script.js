@@ -42,7 +42,7 @@ heroTl.fromTo('.statistics div',
 const portfolioTl = gsap.timeline({
     scrollTrigger: {
         trigger: '#portfolio',
-        start: 'top 300px',
+        start: 'top 500px',
         end: '+=300',
     },
 });
@@ -57,7 +57,7 @@ portfolioTl.fromTo(
         opacity: 1,
         scale: 1, // Bring them to their normal size
         duration: 0.8,
-        stagger: 0.15, // Faster stagger
+        stagger: 0.15,
         ease: 'power1.out', // Smooth easing
     }
 );
